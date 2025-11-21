@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/img.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Famakan Camara - Portfolio</title>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/notifications.css"/>
+  <link rel="stylesheet" href="css/portfolio-improvements.css"/>
+  <link rel="stylesheet" href="css/skins/color-1.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Style switcher-->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+  <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Aside Start -->
+    <div class="aside">
+      <div class="logo">
+        <a href="#"><span>F</span>amakan</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+      </ul>
+    </div>
+    <!-- Aside End -->
+
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <!-- Home Section Start -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, my name is <span class="name">Famakan Camara</span></h3>
+              <h3 class="my-profession">I' m a <span class="typing">2ème année Cycle Ingénieur</span></h3>
+              <p>Étudiant en 2ème année Cycle Ingénieur en Informatique et Ingénierie des Données à l'ENSA Khouribga. Passionné par le développement web, la data science et les nouvelles technologies.</p>
+              <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/wazo.png" alt="Famakan Camara">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+      <!-- About Section Start -->
+      <section class="about section " id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                <h3>Je suis Famakan Camara & <span>Développeur Full-Stack</span></h3>
+                <p>Étudiant en 2ème année Cycle Ingénieur en Informatique et Ingénierie des Données à l'ENSA Khouribga. 
+                   Je développe des solutions web innovantes et m'intéresse particulièrement au développement full-stack, 
+                   à l'analyse de données et aux technologies émergentes. Mon objectif est de créer des applications 
+                   qui résolvent des problèmes réels.</p>
+              </div>
+              </div>
+
+              <!-- Nouvelle structure alignée -->
+              <div class="row">
+                <!-- Colonne infos personnelles -->
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Birthday : <span>17 Feb 2003</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Age : <span>22</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>camarafamakan2@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone : <span>+212 675 22 05 68</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City : <span>Khouribga</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelance : <span>Available</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
+                      <a href="#" onclick="downloadCVAdvanced()" class="btn">Download CV</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Colonne compétences -->
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>Python</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>HTML/CSS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%"></div>
+                        <div class="skill-percent">85%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>JavaScript</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 75%"></div>
+                        <div class="skill-percent">75%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Java</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 79%;"></div>
+                        <div class="skill-percent">79%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>C</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>PHP</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 76%"></div>
+                        <div class="skill-percent">76%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Kotlin</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 65%;"></div>
+                        <div class="skill-percent">65%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>MySQL</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%"></div>
+                        <div class="skill-percent">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                        <div class="timeline-box padd-15">
+                            <div class="timeline shadow-dark">
+                            <!-- ====== timeline item ====== -->
+                             <div class="timeline-item">
+                                <div class="cercle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 2020 - 2021
+                                </h3>
+                                <h4 class="timeline-title">Baccalaureate in mathematical science </h4>
+                                <p class="timeline-text">
+                                    Sokona Dramera Yangué Private High School of Kéniéba, Mali With Honors (Grade: Good)
+                                </p>
+                             </div>
+                             <!-- ====== timeline item ====== -->
+                             <div class="timeline-item">
+                                <div class="cercle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 2022 - 2024
+                                </h3>
+                                <h4 class="timeline-title">Integrated Preparatory Years </h4>
+                                <p class="timeline-text">
+                                    Completed two integrated preparatory years at ENSA Khouribga, Morocco.
+                                    Gained a solid foundation in mathematics, physics, and computer science.
+                                    Developed strong analytical and problem-solving skills.
+                                    Prepared for engineering studies through intensive scientific training.
+                                </p>
+                             </div>
+                                     <!-- ====== timeline item ====== -->
+                             <div class="timeline-item">
+                                <div class="cercle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 2024 - 2025
+                                </h3>
+                                <h4 class="timeline-title">Engineering Cycle </h4>
+                                <p class="timeline-text">
+                                    First year of the engineering cycle in Computer Science and Data Engineering at ENSA Khouribga, Morocco.
+                                    Built advanced skills in programming, algorithms, and data systems. 
+                                </p>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                                        <div class="row">
+                        <div class="timeline-box padd-15">
+                            <div class="timeline shadow-dark">
+                            <!-- ====== timeline item ====== -->
+                             <div class="timeline-item">
+                                <div class="cercle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 2024 - 2025
+                                </h3>
+                                <h4 class="timeline-title">Library Management -Python & MySQL</h4>
+                                <p class="timeline-text">
+                                    Built a library management application with a graphical interface using Python (CustomTkinter) and MySQL database. Managed books, borrowings, and users through a smooth and user-friendly interface.
+                                </p>
+                             </div>
+                             <!-- ====== timeline item ====== -->
+                             <div class="timeline-item">
+                                <div class="cercle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 2024 - 2025
+                                </h3>
+                                <h4 class="timeline-title">Data Processing and Sales Visualization - Python</h4>
+                                <p class="timeline-text">
+                                    Collected and cleaned sales data, then performed all necessary steps of data processing and visualization to extract meaningful insights with Python (Jupyter Notebook).
+                                </p>
+                             </div>
+                                     <!-- ====== timeline item ====== -->
+                             <div class="timeline-item">
+                                <div class="cercle-dot"></div>
+                                <h3 class="timeline-date">
+                                    <i class="fa fa-calendar"></i> 2024 - 2025
+                                </h3>
+                                <h4 class="timeline-title">Sales Data Analysis and Visualization - Java</h4>
+                                <p class="timeline-text">
+                                    Developed a Java application to process and analyze sales data from CSV/MySQL, visualize results with JFreeChart, and manage data via a JavaFX interface .
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+      <!-- Sevices Section Start -->
+       <section class="service section " id="services">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Services item Start -->
+                 <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fa fa-laptop-code"></i>
+                        </div>
+                        <h4>Web Developer</h4>
+                        <p>Built dynamic and responsive websites using HTML, CSS, JavaScript, PHP, and MySQL, handling both frontend and backend development.</p>
+                    </div>
+                 </div>
+                <!-- Services item End -->
+                <!-- Services item Start -->
+                 <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                        <div class="icon">
+                            <i class="fa fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile Developer</h4>
+                        <p>Developed Android applications using Kotlin, with a focus on clean UI design, user interaction, and integration with local databases or APIs.</p>
+                    </div>
+                 </div>
+                <!-- Services item End -->
+                <!-- Services item Start -->
+                <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                    <i class="fa fa-android"></i>
+                    </div>
+                    <h4>Java App Developer</h4>
+                    <p>Created Java desktop applications using JavaFX and Swing, integrating MySQL databases and implementing dynamic data-driven interfaces.</p>
+                </div>
+                </div>
+                <!-- Services item End -->
+                <!-- Services item Start -->
+                <div class="service-item padd-15">
+                <div class="service-item-inner">
+                    <div class="icon">
+                    <i class="fa fa-chart-line"></i>
+                    </div>
+                    <h4>Data Processing & Visualization</h4>
+                    <p>Collected, cleaned, and analyzed data using Python. Built dashboards and visual reports with libraries like Pandas, Matplotlib, and Jupyter Notebook.</p>
+                </div>
+                </div>
+                <!-- Services item End -->
+            </div>
+        </div>
+       </section>
+      <!-- Sevices Section End -->
+      <!-- Portfolio Section Start -->
+       <section class="portfolio section " id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-heading padd-15">
+                    <h2>My Last Projects :</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Java Application Project -->
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                        <div class="portfolio-img">
+                            <img src="images/java.jpg" alt="Java Sales Analysis App">
+                        </div>
+                        <div class="portfolio-content">
+                            <h4>Sales Data Analysis - Java</h4>
+                            <p class="portfolio-tags">Java, JavaFX, MySQL, JFreeChart</p>
+                            <p>Application Java pour analyser et visualiser les données de ventes avec interface JavaFX et graphiques dynamiques.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/famakan-camara/java-sales-analysis" target="_blank" class="btn">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Visualization Project -->
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                        <div class="portfolio-img">
+                            <img src="images/tvd.png" alt="Data Processing & Visualization">
+                        </div>
+                        <div class="portfolio-content">
+                            <h4>Data Processing & Visualization</h4>
+                            <p class="portfolio-tags">Python, Pandas, Matplotlib, Jupyter</p>
+                            <p>Traitement et visualisation de données de ventes avec Python. Analyse complète et insights business.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/famakan-camara/data-visualization" target="_blank" class="btn">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Library Management Project -->
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                        <div class="portfolio-img">
+                            <img src="images/bdproject.jpg" alt="Library Management System">
+                        </div>
+                        <div class="portfolio-content">
+                            <h4>Library Management System</h4>
+                            <p class="portfolio-tags">Python, CustomTkinter, MySQL</p>
+                            <p>Système de gestion de bibliothèque avec interface graphique moderne et base de données MySQL.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/famakan-camara/library-management" target="_blank" class="btn">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sougoula E-commerce Project -->
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                        <div class="portfolio-img">
+                            <img src="images/sougoula.png" alt="Sougoula E-commerce">
+                        </div>
+                        <div class="portfolio-content">
+                            <h4>Sougoula E-commerce</h4>
+                            <p class="portfolio-tags">HTML, CSS, TypeScript, Postgres</p>
+                            <p>Plateforme e-commerce permettant la vente et l'achat avec contact direct via WhatsApp. Interface moderne et responsive.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/TheRealFamakan/sougoula" target="_blank" class="btn">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="btn">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Personnel Project -->
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                        <div class="portfolio-img">
+                            <img src="images/portfolio.png" alt="Portfolio Personnel">
+                        </div>
+                        <div class="portfolio-content">
+                            <h4>Portfolio Personnel</h4>
+                            <p class="portfolio-tags">HTML5, CSS3, JavaScript, EmailJS</p>
+                            <p>Portfolio responsive avec système de contact fonctionnel, changeur de thèmes et téléchargement de CV.</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/famakan-camara/portfolio" target="_blank" class="btn">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="btn">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chez OCP Project -->
+                <div class="portfolio-item padd-15">
+                    <div class="portfolio-item-inner shadow-dark">
+                        <div class="portfolio-img">
+                            <img src="images/ocp.png" alt="Mobile Application">
+                        </div>
+                        <div class="portfolio-content">
+                            <h4>Application de Gestion des Interventions Techniques</h4>
+                            <p class="portfolio-tags">React.js, Node.js, Postgres</p>
+                            <p> Faciliter le suivi, la planification et la traçabilité des
+                                 interventions techniques effectuées par les membres du service. </p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/famakan-camara/android-app" target="_blank" class="btn">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+      <!-- Portfolio Section End -->
+      <!-- Contact Section start -->
+       <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+            <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+            <div class="row">
+                <!-- Contact info item start-->
+                 <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <h4>Call Me On</h4>
+                    <p>+212 67 22 05 68</p>
+                 </div>
+                <!-- Contact info item End -->
+                <!-- Contact info item start-->
+                 <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                    <h4>Office</h4>
+                    <p>Khouribga</p>
+                 </div>
+                <!-- Contact info item End -->
+                <!-- Contact info item start-->
+                 <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>camarafamakan2@gmail.com</p>
+                 </div>
+                <!-- Contact info item End -->
+                <!-- Contact info item start-->
+                 <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-globe-africa"></i></div>
+                    <h4>website</h4>
+                    <p>www.maybelater.com</p>
+                 </div>
+                <!-- Contact info item End -->
+            </div>
+            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="contact-form padd-15">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+       </section>
+      <!-- Contact Section End -->
+    </div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Content End -->
+  <!-- Style Switcher Start  -->
+   <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+   </div>
+  <!-- Style Switcher End  -->
+
+  <!-- JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/cv-download.js"></script>
+  <script src="js/contact-handler.js"></script>
+</body>
+</html>
