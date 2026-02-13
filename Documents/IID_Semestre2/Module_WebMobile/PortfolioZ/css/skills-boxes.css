@@ -1,0 +1,70 @@
+/* Styles pour les boîtes de compétences */
+.skill-category {
+  margin-bottom: 25px;
+}
+
+.skill-category h4 {
+  color: var(--skin-color);
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.skill-box {
+  background: var(--bg-black-50);
+  color: var(--text-black-700);
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid var(--bg-black-50);
+  transition: all 0.3s ease;
+  cursor: default;
+  display: inline-block;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skill-box:hover {
+  background: var(--skin-color);
+  color: white;
+  transform: translateY(-3px);
+  border-color: var(--skin-color);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Mode sombre */
+.dark .skill-box {
+  background: var(--bg-black-100);
+  color: var(--text-black-600);
+  border-color: var(--bg-black-100);
+  box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+.dark .skill-box:hover {
+  background: var(--skin-color);
+  color: white;
+  border-color: var(--skin-color);
+  box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .skill-boxes {
+    gap: 8px;
+  }
+  
+  .skill-box {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

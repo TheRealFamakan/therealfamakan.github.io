@@ -1,0 +1,104 @@
+/* Modern Skills Cards Styling */
+.skills-title {
+    font-size: 20px;
+    color: var(--text-black-900);
+    margin-bottom: 30px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.skill-card {
+    background: var(--bg-black-100);
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--bg-black-50);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--skin-color);
+}
+
+.skill-card h4 {
+    color: var(--skin-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--bg-black-50);
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    color: var(--text-black-700);
+    font-size: 14px;
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.skill-list li:before {
+    content: "●";
+    color: var(--skin-color);
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+}
+
+.skill-list li:hover {
+    padding-left: 25px;
+    color: var(--skin-color);
+}
+
+/* Dark mode */
+.dark .skill-card {
+    background: var(--bg-black-50);
+    border-color: var(--bg-black-100);
+}
+
+.dark .skill-card:hover {
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+}
+
+.dark .skill-card h4 {
+    border-bottom-color: var(--bg-black-100);
+}
+
+.dark .skills-title {
+    color: var(--text-black-900);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .skill-card {
+        padding: 20px 15px;
+    }
+}

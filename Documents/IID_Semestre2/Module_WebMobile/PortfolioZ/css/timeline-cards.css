@@ -1,0 +1,160 @@
+/* Modern Premium Timeline/Education Cards */
+
+.timeline-box {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Hide original timeline line */
+.timeline {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: grid;
+    gap: 25px;
+}
+
+/* Default grid for Experience (mixed content) */
+@media (min-width: 900px) {
+    .timeline {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+    /* Tablet size */
+    .timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.timeline .timeline-item {
+    background: var(--bg-black-100);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Accent border on left */
+.timeline .timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: var(--skin-color);
+    opacity: 0.7;
+    transition: width 0.3s ease;
+}
+
+.timeline .timeline-item:hover::after {
+    width: 6px;
+    opacity: 1;
+}
+
+/* Remove original timeline lines/dots */
+.timeline .timeline-item::before,
+.timeline .cercle-dot {
+    display: none;
+}
+
+.timeline .timeline-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    background: var(--bg-black-50);
+}
+
+.timeline-date {
+    color: var(--skin-color) !important;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+    background: rgba(var(--skin-color-rgb), 0.1);
+    padding: 6px 15px;
+    border-radius: 30px;
+    align-self: flex-start;
+    border: 1px solid rgba(var(--skin-color-rgb), 0.2);
+}
+
+.timeline-date .fa {
+    margin-right: 8px;
+}
+
+.timeline-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-black-900);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeline-title .fa {
+    color: var(--skin-color);
+    font-size: 18px;
+}
+
+.timeline-text {
+    color: var(--text-black-700);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: auto;
+    /* Push text to bottom if needed */
+}
+
+/* Dark mode premium overrides */
+.dark .timeline .timeline-item {
+    background: rgba(30, 30, 40, 0.6);
+    /* Glassy dark */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.dark .timeline .timeline-item:hover {
+    background: rgba(40, 40, 50, 0.8);
+    border-color: var(--skin-color);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3),
+        0 0 15px rgba(var(--skin-color-rgb), 0.2);
+}
+
+
+/* Section Titles spacing */
+.experience .title,
+.education .title {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+/* Dark Mode Override with High Specificity */
+body.dark .timeline-title,
+body.dark .about .title,
+body.dark .experience .title,
+body.dark .education .title,
+body.dark .section-title h2,
+body.dark .contact-title,
+body.dark .contact-sub-title,
+body.dark .service-item h4,
+body.dark .portfolio-item h4 {
+    color: #ffffff !important;
+}
+
+body.dark .timeline-text,
+body.dark .service-item p,
+body.dark .portfolio-item p {
+    color: #e0e0e0 !important;
+}
