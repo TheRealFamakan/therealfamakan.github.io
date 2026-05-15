@@ -13,7 +13,7 @@ function downloadCV() {
 async function downloadCVAdvanced() {
     try {
         const link = document.createElement('a');
-        link.href = 'assets/CV.pdf';
+        link.href = 'assets/FamakanCamaraMLAI.pdf';
         link.download = 'CV_Famakan_Camara.pdf';
         
         document.body.appendChild(link);
