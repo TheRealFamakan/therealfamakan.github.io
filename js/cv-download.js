@@ -3,7 +3,7 @@ function downloadCV() {
     // Créer un lien temporaire pour télécharger le fichier
     const link = document.createElement('a');
     link.href = 'assets/CV.pdf'; // Chemin vers votre CV
-    link.download = 'CV.pdf';
+    link.download = 'FamakanCamaraMLAI.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
