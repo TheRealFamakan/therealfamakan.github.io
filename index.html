@@ -307,49 +307,37 @@
                             <h2>Services</h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="display: flex; flex-wrap: wrap; align-items: stretch;">
 
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="service-item padd-15" style="display: flex;">
+                            <div class="service-item-inner" style="display: flex; flex-direction: column; height: 100%;">
                                 <div class="icon"><i class="fa fa-brain"></i></div>
                                 <h4>Machine Learning & Deep Learning</h4>
-                                <p>End-to-end Machine Learning pipelines: data preprocessing, 
-                                    feature engineering, and advanced model training using CNN, 
-                                    LSTM, and SVM architectures. Expert in Transfer Learning (ResNet50, VGG16) 
-                                    applied to medical and agricultural image classification, delivering 
-                                    high-accuracy automated diagnostics and production-ready vision systems.</p>
+                                <p style="text-align: left;">End-to-end ML pipelines: data preprocessing, feature engineering and model training using CNN, LSTM and SVM. Specialized in Transfer Learning (ResNet50, VGG16) for medical and agricultural image classification.</p>
                             </div>
                         </div>
 
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="service-item padd-15" style="display: flex;">
+                            <div class="service-item-inner" style="display: flex; flex-direction: column; height: 100%;">
                                 <div class="icon"><i class="fa fa-comments"></i></div>
                                 <h4>NLP & LLM Engineering</h4>
-                                <p>Building intelligent NLP pipelines and RAG 
-                                    systems — expert in fine-tuning state-of-the-art 
-                                    models (AraT5V2, BERT) and prompting advanced LLMs (Gemini Flash). 
-                                    Proven experience with low-resource languages (Moroccan Darija), 
-                                    text summarization, multi-class emotion classification, and corpus annotation using Label Studio.</p>
+                                <p style="text-align: left;">Fine-tuning NLP models (AraT5V2, BERT) and building RAG systems with LLMs (Gemini Flash). Experience on low-resource languages (Moroccan Darija), text summarization and multi-class emotion classification.</p>
                             </div>
                         </div>
 
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="service-item padd-15" style="display: flex;">
+                            <div class="service-item-inner" style="display: flex; flex-direction: column; height: 100%;">
                                 <div class="icon"><i class="fa fa-chart-line"></i></div>
                                 <h4>Data Engineering & BI</h4>
-                                <p>ETL pipeline design, relational and NoSQL database modeling (PostgreSQL,
-                                    MongoDB), Big Data processing (Hadoop, MapReduce) and interactive dashboards
-                                    with Power BI and SSIS.</p>
+                                <p style="text-align: left;">ETL pipeline design, relational and NoSQL database modeling (PostgreSQL, MongoDB), Big Data processing (Hadoop, MapReduce) and interactive dashboards with Power BI and SSIS.</p>
                             </div>
                         </div>
 
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
+                        <div class="service-item padd-15" style="display: flex;">
+                            <div class="service-item-inner" style="display: flex; flex-direction: column; height: 100%;">
                                 <div class="icon"><i class="fa fa-laptop-code"></i></div>
                                 <h4>Full-Stack Development</h4>
-                                <p>Building dynamic web applications using Spring Boot, React, Node.js and
-                                    PostgreSQL. Delivered production-ready applications in industrial environments
-                                    (OCP Group).</p>
+                                <p style="text-align: left;">Building web applications with Spring Boot, React, Node.js and PostgreSQL. Delivered a full production app at OCP Group, covering schema design, REST APIs and real-time KPI dashboards.</p>
                             </div>
                         </div>
 
@@ -388,10 +376,11 @@
                                         <span class="tech-tag">BiLSTM</span>
                                         <span class="tech-tag">Flask</span>
                                         <span class="tech-tag">React</span>
+                                        <span class="tech-tag">SQLite</span>
                                     </div>
                                     <p>Full system for detecting 28 emotion classes and binary stress from text.
                                         Compares LinearSVC, BiLSTM, BERT and DistilBERT. <strong>98% accuracy</strong>
-                                        on stress detection. Deployed with Flask + React 19.</p>
+                                        on stress detection. History stored in SQLite, deployed with Flask + React 19.</p>
                                     <div class="portfolio-links">
                                         <a href="https://github.com/TheRealFamakan/DetectionEmotionsEtStress" target="_blank" class="btn">
                                             <i class="fab fa-github"></i> View on GitHub
@@ -414,7 +403,7 @@
                                         <span class="tech-tag">HuggingFace</span>
                                         <span class="tech-tag">Angular 19</span>
                                         <span class="tech-tag">Node.js</span>
-                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Flask</span>
                                     </div>
                                     <p>Fine-tuned AraT5V2 on GOUD-Sum dataset for automatic summarization
                                         of Moroccan Darija articles. Full-stack app: Angular 19 frontend,
@@ -441,11 +430,10 @@
                                         <span class="tech-tag">TensorFlow</span>
                                         <span class="tech-tag">Keras</span>
                                         <span class="tech-tag">Flask</span>
-                                        <span class="tech-tag">Docker</span>
                                     </div>
                                     <p>Binary pneumonia detection on chest X-rays using VGG16 Transfer Learning.
                                         <strong>87.2% accuracy</strong>, 90.3% recall, 94% AUC.
-                                        REST API with drag-and-drop web interface, Docker-ready.</p>
+                                        REST API with drag-and-drop web interface.</p>
                                     <div class="portfolio-links">
                                         <a href="https://github.com/TheRealFamakan/DetectionPneumonie" target="_blank" class="btn">
                                             <i class="fab fa-github"></i> View on GitHub
