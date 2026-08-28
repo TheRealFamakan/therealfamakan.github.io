@@ -113,10 +113,10 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>Driven by Data, Powered by Code</h3>
-                                    <p>I am a second-year Engineering student at ENSA Khouribga, specializing in
+                                    <p>I am a final-year (3rd year) Engineering student at ENSA Khouribga, specializing in
                                         Data Engineering and AI. I design end-to-end data pipelines, train and fine-tune
                                         Deep Learning models (87% accuracy on medical imaging), and build RAG-based
-                                        conversational agents. I am actively seeking a PFA internship to apply my
+                                        conversational agents. I am actively seeking a PFE internship (4-6 months) to apply my
                                         skills in a real-world, data-driven environment.</p>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                 <div class="personal-info padd-15" style="flex: 0 0 100%; max-width: 100%;">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p>Status : <span>Seeking PFA Internship — 2026</span></p>
+                                            <p>Status : <span>Seeking PFE Internship — from Feb. 2027</span></p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -174,7 +174,7 @@
                                                 <li>Python (Pandas, NumPy)</li>
                                                 <li>SQL advanced</li>
                                                 <li>ETL Pipelines</li>
-                                                <li>Hadoop (HDFS, MapReduce)</li>
+                                                <li>Hadoop (HDFS, MapReduce) / Spark, PySpark</li>
                                                 <li>Power BI / SSIS / SSAS</li>
                                             </ul>
                                         </div>
@@ -252,10 +252,10 @@
                                             <div class="timeline-item">
                                                 <div class="cercle-dot"></div>
                                                 <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2024 - Present
+                                                    <i class="fa fa-calendar"></i> 2024 - 2027
                                                 </h3>
                                                 <h4 class="timeline-title"><i class="fa fa-laptop-code"></i> Engineering
-                                                    Cycle — 2nd Year</h4>
+                                                    Cycle — 3rd (Final) Year</h4>
                                                 <p class="timeline-text">
                                                     ENSA Khouribga<br>
                                                     Specialization: Data Engineering & AI (Big Data, Machine Learning,
@@ -272,6 +272,24 @@
                                 <div class="row">
                                     <div class="timeline-box padd-15">
                                         <div class="experience-grid">
+                                            <!-- MaritimeFlow PFA -->
+                                            <div class="experience-item">
+                                                <div class="exp-img-container">
+                                                    <img src="images/ocp.png" alt="OCP Group" class="exp-img">
+                                                </div>
+                                                <div class="exp-content">
+                                                    <h3 class="timeline-date"><i class="fa fa-calendar"></i> Aug – Sept 2026</h3>
+                                                    <h4 class="timeline-title">PFA Internship — MaritimeFlow, Maritime Fleet Optimization</h4>
+                                                    <h5 class="exp-company">OCP Group, Khouribga</h5>
+                                                    <p class="timeline-text">
+                                                        Built an AIS data pipeline (cleaning, segmentation of ~27,000 trips,
+                                                        19-40M raw positions/month) with DBSCAN port clustering (500 clusters)
+                                                        and an Origin-Destination matrix (15,671 trips). Trained an ETA
+                                                        prediction model (LightGBM): MAE 34.5h, R²=0.72 on test set.
+                                                    </p>
+                                                </div>
+                                            </div>
+
                                             <!-- OCP Internship -->
                                             <div class="experience-item">
                                                 <div class="exp-img-container">
@@ -279,7 +297,7 @@
                                                 </div>
                                                 <div class="exp-content">
                                                     <h3 class="timeline-date"><i class="fa fa-calendar"></i> Jul – Aug 2025</h3>
-                                                    <h4 class="timeline-title">Internship — Data & Full-Stack Developer</h4>
+                                                    <h4 class="timeline-title">Internship (Stage d'Initiation) — Data & Full-Stack Developer</h4>
                                                     <h5 class="exp-company">OCP Group, Khouribga</h5>
                                                     <p class="timeline-text">
                                                         Designed a PostgreSQL relational schema for technical
@@ -309,7 +327,7 @@
                         </div>
                     </div>
                     <div class="row" style="display: flex; flex-wrap: wrap;">
-            
+
                         <!-- Associate Data Engineer -->
                         <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
                             <div class="portfolio-item-inner shadow-dark">
@@ -332,7 +350,7 @@
                                 </div>
                             </div>
                         </div>
-            
+
                         <!-- Associate Data Analyst -->
                         <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
                             <div class="portfolio-item-inner shadow-dark">
@@ -355,7 +373,7 @@
                                 </div>
                             </div>
                         </div>
-            
+
                         <!-- AI Engineer for Data Scientists Associate -->
                         <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
                             <div class="portfolio-item-inner shadow-dark">
@@ -376,14 +394,14 @@
                                         </a>
                                     </div>
                                 </div>
-                </div>
-            </div>
+                            </div>
+                        </div>
 
-        </div>
-    </div>
-</section>
-<!-- Certifications Section End -->
-            
+                    </div>
+                </div>
+            </section>
+            <!-- Certifications Section End -->
+
             <!-- Services Section Start -->
             <section class="service section" id="services">
                 <div class="container">
@@ -568,8 +586,9 @@
                                         <span class="tech-tag">Streaming</span>
                                         <span class="tech-tag">Dashboard</span>
                                     </div>
-                                    <p>Real-time sales analytics pipeline with Big Data streaming architecture.
-                                        Data collector, event simulators and live dashboard — fully built in Python.</p>
+                                    <p>Real-time sales analytics pipeline with simulated streaming architecture
+                                        (event simulators + file/CSV polling). Data collector and live dashboard with
+                                        SQL queries and calculated KPIs — fully built in Python.</p>
                                     <div class="portfolio-links">
                                         <a href="https://github.com/TheRealFamakan/SalesDashbordBigDataStreaming" target="_blank" class="btn">
                                             <i class="fab fa-github"></i> View on GitHub
@@ -594,9 +613,9 @@
                                         <span class="tech-tag">RAG</span>
                                         <span class="tech-tag">Python</span>
                                     </div>
-                                    <p>Full-stack sales management and analysis platform with an AI chatbot
-                                        based on RAG architecture. Java/Spring Boot backend, React frontend,
-                                        Python AI service.</p>
+                                    <p>Full-stack sales management and analysis platform with SQL analytical
+                                        queries/KPIs and an AI chatbot based on RAG architecture. Java/Spring Boot
+                                        backend, React frontend, Python AI service.</p>
                                     <div class="portfolio-links">
                                         <a href="https://github.com/TheRealFamakan/SalesManagementSystem_JavaEE" target="_blank" class="btn">
                                             <i class="fab fa-github"></i> View on GitHub
