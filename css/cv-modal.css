@@ -16,8 +16,8 @@
 .cv-modal-content {
     display: flex;
     flex-direction: column;
-    width: min(100%, 900px);
-    height: min(92vh, 900px);
+    width: min(calc(100vw - 48px), 1600px);
+    height: min(calc(100vh - 48px), 1200px);
     overflow: hidden;
     background: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
