@@ -24,9 +24,45 @@ const cvFiles = {
 
 let activeCVLanguage = 'fr';
 
-function openCVInNewTab() {
-    const file = cvFiles[activeCVLanguage] || cvFiles.fr;
-    window.open(file.path, '_blank', 'noopener,noreferrer');
+function chooseCVLanguage() {
+    let chooser = document.querySelector('.cv-language-chooser');
+    if (chooser) {
+        chooser.hidden = false;
+        return;
+    }
+
+    chooser = document.createElement('div');
+    chooser.className = 'cv-language-chooser';
+    chooser.setAttribute('role', 'dialog');
+    chooser.setAttribute('aria-modal', 'true');
+    chooser.setAttribute('aria-labelledby', 'cv-language-chooser-title');
+    chooser.innerHTML = `
+        <div class="cv-language-chooser-content">
+            <h2 id="cv-language-chooser-title">Choose CV language</h2>
+            <div class="cv-language-chooser-actions">
+                <button type="button" data-cv-language="fr">French</button>
+                <button type="button" data-cv-language="en">English</button>
+            </div>
+            <button type="button" class="cv-language-chooser-close">Cancel</button>
+        </div>
+    `;
+
+    document.body.appendChild(chooser);
+    chooser.querySelectorAll('[data-cv-language]').forEach((button) => {
+        button.addEventListener('click', () => {
+            const language = button.dataset.cvLanguage;
+            activeCVLanguage = language;
+            const file = cvFiles[language];
+            window.open(file.path, '_blank', 'noopener,noreferrer');
+            chooser.hidden = true;
+        });
+    });
+    chooser.querySelector('.cv-language-chooser-close').addEventListener('click', () => {
+        chooser.hidden = true;
+    });
+    chooser.addEventListener('click', (event) => {
+        if (event.target === chooser) chooser.hidden = true;
+    });
 }
 
 function downloadCVAdvanced() {
