@@ -45,10 +45,10 @@
                     <div class="nav-menu">
                         <ul class="nav">
                             <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
                             <li><a href="#certifications">Certifications</a></li>
+                            <li><a href="#services">Services</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="javascript:void(0)" onclick="downloadCVAdvanced()" class="cv-nav-link"><i
                                         class="fas fa-file-download"></i> CV</a></li>
@@ -99,6 +99,241 @@
                 </div>
             </section>
             <!-- Home Section End -->
+
+            <!-- Portfolio Section Start -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2 style="color: var(--skin-color);">My Last Projects :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <!-- TSP Solver - Metaheuristics -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/tsp-solver.png" alt="TSP Solver - Metaheuristics">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>TSP Solver — Metaheuristics</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Flask</span>
+                                        <span class="tech-tag">Simulated Annealing</span>
+                                        <span class="tech-tag">VNS</span>
+                                        <span class="tech-tag">Greedy</span>
+                                    </div>
+                                    <p>Implemented and compared multiple optimization heuristics (Variable
+                                        Neighborhood Search, Simulated Annealing, Greedy) for the Traveling
+                                        Salesman Problem, exposed through a Flask web application.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/Optimization---VNS-" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hadoop Cluster - MovieLens 32M -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/hadoop-cluster.png" alt="Hadoop Cluster - MovieLens 32M">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>Hadoop Cluster — MovieLens 32M</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">Hadoop</span>
+                                        <span class="tech-tag">HDFS</span>
+                                        <span class="tech-tag">MapReduce</span>
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">Python</span>
+                                    </div>
+                                    <p>Set up a 3-machine Hadoop cluster (1 NameNode + 2 DataNodes) and
+                                        implemented 8 MapReduce jobs in Java/Python to process a large-scale
+                                        dataset, in a team setting.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Emotion & Stress Detection -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/emotion.png" alt="Emotion & Stress Detection">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>Emotion & Stress Detection — ML & Transformers</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">BERT</span>
+                                        <span class="tech-tag">DistilBERT</span>
+                                        <span class="tech-tag">BiLSTM</span>
+                                        <span class="tech-tag">Flask</span>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">SQLite</span>
+                                    </div>
+                                    <p>Full system for detecting 28 emotion classes and binary stress from text.
+                                        Compares LinearSVC, BiLSTM, BERT and DistilBERT. <strong>98% accuracy</strong>
+                                        on stress detection. History stored in SQLite, deployed with Flask + React 19.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/DetectionEmotionsEtStress" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Darija Summarization -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/darija.png" alt="Darija Summarization">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>Darija NLP — Automatic Summarization</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">AraT5V2</span>
+                                        <span class="tech-tag">HuggingFace</span>
+                                        <span class="tech-tag">Angular 19</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Flask</span>
+                                    </div>
+                                    <p>Fine-tuned AraT5V2 on GOUD-Sum dataset for automatic summarization
+                                        of Moroccan Darija articles. Full-stack app: Angular 19 frontend,
+                                        Node.js/Express backend, Flask inference service.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/DarijaSummarizationProject" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DeepPneumonia -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/deepP.png" alt="DeepPneumonia">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>DeepPneumonia — Chest X-Ray Classification</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">VGG16</span>
+                                        <span class="tech-tag">TensorFlow</span>
+                                        <span class="tech-tag">Keras</span>
+                                        <span class="tech-tag">Flask</span>
+                                    </div>
+                                    <p>Binary pneumonia detection on chest X-rays using VGG16 Transfer Learning.
+                                        <strong>87.2% accuracy</strong>, 90.3% recall, 94% AUC.
+                                        REST API with drag-and-drop web interface.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/DetectionPneumonie" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- xAgriScan -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/agriscan.png" alt="xAgriScan">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>xAgriScan — Apple Disease Detection + AI</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">ResNet50</span>
+                                        <span class="tech-tag">PyTorch</span>
+                                        <span class="tech-tag">Gemini API</span>
+                                        <span class="tech-tag">React 18</span>
+                                        <span class="tech-tag">Flask</span>
+                                    </div>
+                                    <p>Apple leaf disease classifier (6 classes) using fine-tuned ResNet50.
+                                        Generates automated agronomic treatment advice via Gemini Flash API.
+                                        Supports single and batch image prediction.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/xAgriScan" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sales Dashboard Big Data Streaming -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/streaming.png" alt="Sales Dashboard Big Data Streaming">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>Sales Dashboard — Big Data Streaming</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Streaming</span>
+                                        <span class="tech-tag">Dashboard</span>
+                                    </div>
+                                    <p>Real-time sales analytics pipeline with simulated streaming architecture
+                                        (event simulators + file/CSV polling). Data collector and live dashboard with
+                                        SQL queries and calculated KPIs — fully built in Python.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/SalesDashbordBigDataStreaming" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sales Management System JavaEE -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/jee.png" alt="Sales Management System">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>Sales Management System — RAG Chatbot</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">Jakarta EE</span>
+                                        <span class="tech-tag">Spring Boot</span>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">RAG</span>
+                                        <span class="tech-tag">Python</span>
+                                    </div>
+                                    <p>Full-stack sales management and analysis platform with SQL analytical
+                                        queries/KPIs and an AI chatbot based on RAG architecture. Java/Spring Boot
+                                        backend, React frontend, Python AI service.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/SalesManagementSystem_JavaEE" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio Section End -->
 
             <!-- About Section Start -->
             <section class="about section" id="about">
@@ -464,241 +699,6 @@
                 </div>
             </section>
             <!-- Services Section End -->
-
-            <!-- Portfolio Section Start -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <h2 style="color: var(--skin-color);">My Last Projects :</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <!-- TSP Solver - Metaheuristics -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/tsp-solver.png" alt="TSP Solver - Metaheuristics">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>TSP Solver — Metaheuristics</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">Flask</span>
-                                        <span class="tech-tag">Simulated Annealing</span>
-                                        <span class="tech-tag">VNS</span>
-                                        <span class="tech-tag">Greedy</span>
-                                    </div>
-                                    <p>Implemented and compared multiple optimization heuristics (Variable
-                                        Neighborhood Search, Simulated Annealing, Greedy) for the Traveling
-                                        Salesman Problem, exposed through a Flask web application.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/Optimization---VNS-" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Hadoop Cluster - MovieLens 32M -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/hadoop-cluster.png" alt="Hadoop Cluster - MovieLens 32M">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>Hadoop Cluster — MovieLens 32M</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">Hadoop</span>
-                                        <span class="tech-tag">HDFS</span>
-                                        <span class="tech-tag">MapReduce</span>
-                                        <span class="tech-tag">Java</span>
-                                        <span class="tech-tag">Python</span>
-                                    </div>
-                                    <p>Set up a 3-machine Hadoop cluster (1 NameNode + 2 DataNodes) and
-                                        implemented 8 MapReduce jobs in Java/Python to process a large-scale
-                                        dataset, in a team setting.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Emotion & Stress Detection -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/emotion.png" alt="Emotion & Stress Detection">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>Emotion & Stress Detection — ML & Transformers</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">BERT</span>
-                                        <span class="tech-tag">DistilBERT</span>
-                                        <span class="tech-tag">BiLSTM</span>
-                                        <span class="tech-tag">Flask</span>
-                                        <span class="tech-tag">React</span>
-                                        <span class="tech-tag">SQLite</span>
-                                    </div>
-                                    <p>Full system for detecting 28 emotion classes and binary stress from text.
-                                        Compares LinearSVC, BiLSTM, BERT and DistilBERT. <strong>98% accuracy</strong>
-                                        on stress detection. History stored in SQLite, deployed with Flask + React 19.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/DetectionEmotionsEtStress" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Darija Summarization -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/darija.png" alt="Darija Summarization">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>Darija NLP — Automatic Summarization</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">AraT5V2</span>
-                                        <span class="tech-tag">HuggingFace</span>
-                                        <span class="tech-tag">Angular 19</span>
-                                        <span class="tech-tag">Node.js</span>
-                                        <span class="tech-tag">Flask</span>
-                                    </div>
-                                    <p>Fine-tuned AraT5V2 on GOUD-Sum dataset for automatic summarization
-                                        of Moroccan Darija articles. Full-stack app: Angular 19 frontend,
-                                        Node.js/Express backend, Flask inference service.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/DarijaSummarizationProject" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- DeepPneumonia -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/deepP.png" alt="DeepPneumonia">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>DeepPneumonia — Chest X-Ray Classification</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">VGG16</span>
-                                        <span class="tech-tag">TensorFlow</span>
-                                        <span class="tech-tag">Keras</span>
-                                        <span class="tech-tag">Flask</span>
-                                    </div>
-                                    <p>Binary pneumonia detection on chest X-rays using VGG16 Transfer Learning.
-                                        <strong>87.2% accuracy</strong>, 90.3% recall, 94% AUC.
-                                        REST API with drag-and-drop web interface.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/DetectionPneumonie" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- xAgriScan -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/agriscan.png" alt="xAgriScan">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>xAgriScan — Apple Disease Detection + AI</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">ResNet50</span>
-                                        <span class="tech-tag">PyTorch</span>
-                                        <span class="tech-tag">Gemini API</span>
-                                        <span class="tech-tag">React 18</span>
-                                        <span class="tech-tag">Flask</span>
-                                    </div>
-                                    <p>Apple leaf disease classifier (6 classes) using fine-tuned ResNet50.
-                                        Generates automated agronomic treatment advice via Gemini Flash API.
-                                        Supports single and batch image prediction.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/xAgriScan" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sales Dashboard Big Data Streaming -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/streaming.png" alt="Sales Dashboard Big Data Streaming">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>Sales Dashboard — Big Data Streaming</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">Streaming</span>
-                                        <span class="tech-tag">Dashboard</span>
-                                    </div>
-                                    <p>Real-time sales analytics pipeline with simulated streaming architecture
-                                        (event simulators + file/CSV polling). Data collector and live dashboard with
-                                        SQL queries and calculated KPIs — fully built in Python.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/SalesDashbordBigDataStreaming" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sales Management System JavaEE -->
-                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/jee.png" alt="Sales Management System">
-                                </div>
-                                <div class="portfolio-content">
-                                    <h4>Sales Management System — RAG Chatbot</h4>
-                                    <div class="portfolio-tags">
-                                        <span class="tech-tag">Jakarta EE</span>
-                                        <span class="tech-tag">Spring Boot</span>
-                                        <span class="tech-tag">React</span>
-                                        <span class="tech-tag">RAG</span>
-                                        <span class="tech-tag">Python</span>
-                                    </div>
-                                    <p>Full-stack sales management and analysis platform with SQL analytical
-                                        queries/KPIs and an AI chatbot based on RAG architecture. Java/Spring Boot
-                                        backend, React frontend, Python AI service.</p>
-                                    <div class="portfolio-links">
-                                        <a href="https://github.com/TheRealFamakan/SalesManagementSystem_JavaEE" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!-- Portfolio Section End -->
 
             <!-- Contact Section Start -->
             <section class="contact section" id="contact">
