@@ -87,8 +87,8 @@
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Famakan Camara</span></h3>
                             <h3 class="my-profession">I'm a <span class="profession-title">Data & AI Engineer</span></h3>
-                            <p>Building intelligent systems and scalable data pipelines.
-                                Specialized in Machine Learning, NLP, LLM fine-tuning and RAG architectures.
+                            <p>Building intelligent systems, scalable data pipelines, and optimization models.
+                                Specialized in Machine Learning, Operations Research (MILP, metaheuristics), and RAG architectures.
                             </p>
                             <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                         </div>
@@ -114,8 +114,9 @@
                                 <div class="about-text padd-15">
                                     <h3>Driven by Data, Powered by Code</h3>
                                     <p>I am a final-year (3rd year) Engineering student at ENSA Khouribga, specializing in
-                                        Data Engineering and AI. I design end-to-end data pipelines, train and fine-tune
-                                        Deep Learning models (87% accuracy on medical imaging), and build RAG-based
+                                        Data Engineering and AI. I design end-to-end data pipelines, formulate and solve
+                                        optimization problems (Mixed Integer Linear Programming, metaheuristics), train and
+                                        fine-tune Deep Learning models (87% accuracy on medical imaging), and build RAG-based
                                         conversational agents. I am actively seeking a PFE internship (4-6 months) to apply my
                                         skills in a real-world, data-driven environment.</p>
                                 </div>
@@ -142,6 +143,17 @@
                                 <div class="skills padd-15" style="flex: 0 0 100%; max-width: 100%;">
                                     <h3 class="skills-title">Technologies I work with</h3>
                                     <div class="skills-grid">
+
+                                        <!-- Optimization & OR Card -->
+                                        <div class="skill-card">
+                                            <h4>Optimization & Operations Research</h4>
+                                            <ul class="skill-list">
+                                                <li>Mixed Integer Linear Programming (MILP)</li>
+                                                <li>ALNS (Adaptive Large Neighborhood Search)</li>
+                                                <li>Simulated Annealing / Variable Neighborhood Search</li>
+                                                <li>Discrete-Event Simulation (SimPy)</li>
+                                            </ul>
+                                        </div>
 
                                         <!-- ML & AI Card -->
                                         <div class="skill-card">
@@ -286,6 +298,10 @@
                                                         19-40M raw positions/month) with DBSCAN port clustering (500 clusters)
                                                         and an Origin-Destination matrix (15,671 trips). Trained an ETA
                                                         prediction model (LightGBM): MAE 34.5h, R²=0.72 on test set.
+                                                        Formulated a Mixed Integer Linear Program (MILP) combined with an
+                                                        ALNS metaheuristic for fleet routing, then built a discrete-event
+                                                        simulation (SimPy) to benchmark the optimized policy against the
+                                                        existing practice.
                                                     </p>
                                                 </div>
                                             </div>
@@ -414,6 +430,14 @@
 
                         <div class="service-item padd-15" style="display: flex;">
                             <div class="service-item-inner" style="display: flex; flex-direction: column; height: 100%;">
+                                <div class="icon"><i class="fa fa-project-diagram"></i></div>
+                                <h4>Optimization & Operations Research</h4>
+                                <p style="text-align: left;">Formulating and solving Mixed Integer Linear Programs (MILP), designing metaheuristics (ALNS, Simulated Annealing, VNS), and validating solutions with discrete-event simulation (SimPy).</p>
+                            </div>
+                        </div>
+
+                        <div class="service-item padd-15" style="display: flex;">
+                            <div class="service-item-inner" style="display: flex; flex-direction: column; height: 100%;">
                                 <div class="icon"><i class="fa fa-brain"></i></div>
                                 <h4>Machine Learning & Deep Learning</h4>
                                 <p style="text-align: left;">End-to-end ML pipelines: data preprocessing, feature engineering and model training using CNN, LSTM and SVM. Specialized in Transfer Learning (ResNet50, VGG16) for medical and agricultural image classification.</p>
@@ -463,6 +487,60 @@
                         </div>
                     </div>
                     <div class="row">
+
+                        <!-- TSP Solver - Metaheuristics -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/tsp-solver.png" alt="TSP Solver - Metaheuristics">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>TSP Solver — Metaheuristics</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Flask</span>
+                                        <span class="tech-tag">Simulated Annealing</span>
+                                        <span class="tech-tag">VNS</span>
+                                        <span class="tech-tag">Greedy</span>
+                                    </div>
+                                    <p>Implemented and compared multiple optimization heuristics (Variable
+                                        Neighborhood Search, Simulated Annealing, Greedy) for the Traveling
+                                        Salesman Problem, exposed through a Flask web application.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hadoop Cluster - MovieLens 32M -->
+                        <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/hadoop-cluster.png" alt="Hadoop Cluster - MovieLens 32M">
+                                </div>
+                                <div class="portfolio-content">
+                                    <h4>Hadoop Cluster — MovieLens 32M</h4>
+                                    <div class="portfolio-tags">
+                                        <span class="tech-tag">Hadoop</span>
+                                        <span class="tech-tag">HDFS</span>
+                                        <span class="tech-tag">MapReduce</span>
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">Python</span>
+                                    </div>
+                                    <p>Set up a 3-machine Hadoop cluster (1 NameNode + 2 DataNodes) and
+                                        implemented 8 MapReduce jobs in Java/Python to process a large-scale
+                                        dataset, in a team setting.</p>
+                                    <div class="portfolio-links">
+                                        <a href="https://github.com/TheRealFamakan/" target="_blank" class="btn">
+                                            <i class="fab fa-github"></i> View on GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- Emotion & Stress Detection -->
                         <div class="portfolio-item padd-15" style="flex: 0 0 33.33%; max-width: 33.33%;">
