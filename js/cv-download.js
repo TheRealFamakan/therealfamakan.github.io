@@ -24,6 +24,11 @@ const cvFiles = {
 
 let activeCVLanguage = 'fr';
 
+function openCVInNewTab() {
+    const file = cvFiles[activeCVLanguage] || cvFiles.fr;
+    window.open(file.path, '_blank', 'noopener,noreferrer');
+}
+
 function downloadCVAdvanced() {
     const modal = getCVModal();
     modal.hidden = false;
