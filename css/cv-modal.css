@@ -1,0 +1,141 @@
+.cv-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.cv-modal[hidden] {
+    display: none;
+}
+
+.cv-modal-content {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 900px);
+    height: min(92vh, 900px);
+    overflow: hidden;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.cv-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 20px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.cv-modal-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cv-modal-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cv-language-toggle {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    background: var(--bg-black-900);
+    border-radius: 6px;
+}
+
+.cv-language-button,
+.cv-modal-close {
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+}
+
+.cv-language-button {
+    padding: 7px 10px;
+    color: var(--text-black-700);
+    background: transparent;
+    border-radius: 4px;
+}
+
+.cv-language-button.active,
+.cv-language-button:hover {
+    color: #fff;
+    background: var(--skin-color);
+}
+
+.cv-modal-close {
+    width: 36px;
+    height: 36px;
+    color: var(--text-black-900);
+    font-size: 24px;
+    line-height: 1;
+    background: transparent;
+}
+
+.cv-modal-close:hover {
+    color: var(--skin-color);
+}
+
+.cv-modal-preview {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    border: 0;
+    background: #fff;
+}
+
+.cv-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 20px;
+    border-top: 1px solid var(--bg-black-50);
+}
+
+.cv-modal-download {
+    padding: 10px 24px;
+    color: #fff;
+    background: var(--skin-color);
+    border-radius: 40px;
+}
+
+.cv-modal-download:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .cv-modal {
+        padding: 10px;
+    }
+
+    .cv-modal-content {
+        height: 94vh;
+    }
+
+    .cv-modal-header {
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .cv-modal-actions {
+        gap: 4px;
+    }
+
+    .cv-language-button {
+        padding: 6px 7px;
+    }
+
+    .cv-modal-footer {
+        padding: 12px;
+    }
+}
