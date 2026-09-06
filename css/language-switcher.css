@@ -1,0 +1,23 @@
+.language-switcher {
+    display: flex;
+    gap: 2px;
+    padding: 2px;
+    background: var(--bg-black-900);
+    border-radius: 4px;
+}
+
+.language-button {
+    padding: 3px 6px;
+    color: var(--text-black-700);
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    font: 600 11px 'Poppins', sans-serif;
+}
+
+.language-button.active,
+.language-button:hover {
+    color: #fff;
+    background: var(--skin-color);
+}

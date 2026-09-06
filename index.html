@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/modern-portfolio.css" />
     <link rel="stylesheet" href="css/experience-footer.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/language-switcher.css" />
     <link rel="stylesheet" href="css/timeline-cards.css" />
     <link rel="stylesheet" href="css/cv-modal.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" />
@@ -45,16 +46,20 @@
                     </div>
                     <div class="nav-menu">
                         <ul class="nav">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#certifications">Certifications</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                            <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                            <li><a href="#about" data-i18n="nav.about">About</a></li>
+                            <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+                            <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                             <li><a href="javascript:void(0)" onclick="downloadCVAdvanced()" class="cv-nav-link"><i
-                                        class="fas fa-eye"></i> View CV</a></li>
+                                        class="fas fa-eye"></i> <span data-i18n="nav.viewCv">View CV</span></a></li>
                         </ul>
                         <div class="header-controls">
+                            <div class="language-switcher" role="group" aria-label="Language">
+                                <button type="button" class="language-button active" data-language="en" aria-pressed="true">EN</button>
+                                <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+                            </div>
                             <div class="theme-colors">
                                 <span class="color-1" onclick="setActiveStyle('color-1')"></span>
                                 <span class="color-2" onclick="setActiveStyle('color-2')"></span>
@@ -86,12 +91,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Famakan Camara</span></h3>
-                            <h3 class="my-profession">I'm a <span class="profession-title">Data & AI Engineer</span></h3>
-                            <p>Building intelligent systems, scalable data pipelines, and optimization models.
+                            <h3 class="hello"><span data-i18n="home.hello">Hello, my name is</span> <span class="name">Famakan Camara</span></h3>
+                            <h3 class="my-profession"><span data-i18n="home.professionPrefix">I'm a</span> <span class="profession-title">Data & AI Engineer</span></h3>
+                            <p data-i18n="home.intro">Building intelligent systems, scalable data pipelines, and optimization models.
                                 Specialized in Machine Learning, Operations Research (MILP, metaheuristics), and RAG architectures.
                             </p>
-                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                            <a href="#contact" data-section-index="1" class="btn hire-me" data-i18n="actions.hireMe">Hire Me</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/wazo.png" alt="Famakan Camara">
@@ -106,12 +111,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
+                            <h2 data-i18n="sections.portfolio">Portfolio</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="portfolio-heading padd-15">
-                            <h2 style="color: var(--skin-color);">My Last Projects :</h2>
+                            <h2 style="color: var(--skin-color);" data-i18n="portfolio.latest">My Last Projects :</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -136,7 +141,7 @@
                                         Salesman Problem, exposed through a Flask web application.</p>
                                     <div class="portfolio-links">
                                         <a href="https://github.com/TheRealFamakan/Optimization---VNS-" target="_blank" class="btn">
-                                            <i class="fab fa-github"></i> View on GitHub
+                                            <i class="fab fa-github"></i> <span data-i18n="actions.github">View on GitHub</span>
                                         </a>
                                     </div>
                                 </div>
@@ -341,15 +346,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>About Me</h2>
+                            <h2 data-i18n="sections.about">About Me</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>Driven by Data, Powered by Code</h3>
-                                    <p>I am a final-year (3rd year) Engineering student at ENSA Khouribga, specializing in
+                                    <h3 data-i18n="about.title">Driven by Data, Powered by Code</h3>
+                                    <p data-i18n="about.intro">I am a final-year (3rd year) Engineering student at ENSA Khouribga, specializing in
                                         Data Engineering and AI. I design end-to-end data pipelines, formulate and solve
                                         optimization problems (Mixed Integer Linear Programming, metaheuristics), train and
                                         fine-tune Deep Learning models (87% accuracy on medical imaging), and build RAG-based
@@ -362,13 +367,13 @@
                                 <div class="personal-info padd-15" style="flex: 0 0 100%; max-width: 100%;">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p>Status : <span>Seeking PFE Internship — from Feb. 2027</span></p>
+                                            <p><span data-i18n="about.statusLabel">Status :</span> <span data-i18n="about.status">Seeking PFE Internship — from Feb. 2027</span></p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
-                                            <a href="#" onclick="downloadCVAdvanced()" class="btn">Download CV</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me" data-i18n="actions.hireMe">Hire me</a>
+                                            <a href="#" onclick="downloadCVAdvanced()" class="btn" data-i18n="actions.downloadCv">Download CV</a>
                                         </div>
                                     </div>
                                 </div>
@@ -377,7 +382,7 @@
                             <!-- Skills Section -->
                             <div class="row">
                                 <div class="skills padd-15" style="flex: 0 0 100%; max-width: 100%;">
-                                    <h3 class="skills-title">Technologies I work with</h3>
+                                    <h3 class="skills-title" data-i18n="skills.title">Technologies I work with</h3>
                                     <div class="skills-grid">
 
                                         <!-- Optimization & OR Card -->
@@ -469,7 +474,7 @@
 
                         <div class="row">
                             <div class="education padd-15">
-                                <h3 class="title">Education</h3>
+                                <h3 class="title" data-i18n="sections.education">Education</h3>
                                 <div class="row">
                                     <div class="timeline-box padd-15">
                                         <div class="timeline">
@@ -516,7 +521,7 @@
                             </div>
 
                             <div class="experience padd-15">
-                                <h3 class="title">Experience</h3>
+                                <h3 class="title" data-i18n="sections.experience">Experience</h3>
                                 <div class="row">
                                     <div class="timeline-box padd-15">
                                         <div class="experience-grid">
@@ -575,7 +580,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Certifications</h2>
+                            <h2 data-i18n="sections.certifications">Certifications</h2>
                         </div>
                     </div>
                     <div class="row" style="display: flex; flex-wrap: wrap;">
@@ -659,7 +664,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Services</h2>
+                            <h2 data-i18n="sections.services">Services</h2>
                         </div>
                     </div>
                     <div class="row" style="display: flex; flex-wrap: wrap; align-items: stretch;">
@@ -706,67 +711,67 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
+                            <h2 data-i18n="sections.contact">Contact Me</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <h3 class="contact-title padd-15" data-i18n="contact.questions">Have You Any Questions ?</h3>
+                    <h4 class="contact-sub-title padd-15" data-i18n="contact.available">I'M AT YOUR SERVICES</h4>
                     <div class="row">
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Me On</h4>
+                            <h4 data-i18n="contact.phone">Call Me On</h4>
                             <p>+212 675 22 05 68</p>
                         </div>
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Location</h4>
+                            <h4 data-i18n="contact.location">Location</h4>
                             <p>Khouribga, Maroc</p>
                         </div>
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
+                            <h4 data-i18n="contact.email">Email</h4>
                             <p>camarafamakan2@gmail.com</p>
                         </div>
                         <div class="contact-info-item padd-15">
                             <div class="icon"><i class="fa fa-globe-africa"></i></div>
-                            <h4>Website</h4>
+                            <h4 data-i18n="contact.website">Website</h4>
                             <p>camarafamakan.me</p>
                         </div>
                     </div>
-                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <h3 class="contact-title padd-15" data-i18n="contact.sendEmail">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15" data-i18n="contact.responsive">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <div class="row">
                         <div class="contact-form padd-15">
                             <form id="contactForm">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                            <input type="text" name="name" class="form-control" placeholder="Name" data-i18n-placeholder="form.name" required>
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                            <input type="email" name="email" class="form-control" placeholder="Email" data-i18n-placeholder="form.email" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject" data-i18n-placeholder="form.subject" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                            <textarea name="message" class="form-control" placeholder="Message" data-i18n-placeholder="form.message" required></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
-                                        <button type="submit" class="btn">Send Message</button>
+                                        <button type="submit" class="btn" data-i18n="actions.sendMessage">Send Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -781,7 +786,7 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-content padd-15">
-                        <p>©2026 Famakan Camara. All rights reserved.</p>
+                        <p data-i18n="footer.rights">©2026 Famakan Camara. All rights reserved.</p>
                         <div class="footer-social">
                             <a href="https://github.com/TheRealFamakan" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/famakan-camara" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -803,6 +808,7 @@
     <script src="js/style-switcher.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/cv-download.js"></script>
+    <script src="js/language-switcher.js"></script>
     <script src="js/contact-handler.js"></script>
 </body>
 
