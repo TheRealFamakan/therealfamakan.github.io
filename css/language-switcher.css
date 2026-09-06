@@ -2,12 +2,13 @@
     display: flex;
     gap: 2px;
     padding: 2px;
-    background: var(--bg-black-900);
-    border-radius: 4px;
+    background: transparent;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 12px;
 }
 
 .language-button {
-    padding: 3px 6px;
+    padding: 2px 5px;
     color: var(--text-black-700);
     border: 0;
     border-radius: 3px;
