@@ -97,11 +97,13 @@
 
 .cv-modal-footer {
     display: flex;
+    gap: 12px;
     justify-content: flex-end;
     padding: 14px 20px;
     border-top: 1px solid var(--bg-black-50);
 }
 
+.cv-modal-open,
 .cv-modal-download {
     padding: 10px 24px;
     color: #fff;
@@ -109,6 +111,7 @@
     border-radius: 40px;
 }
 
+.cv-modal-open:hover,
 .cv-modal-download:hover {
     transform: scale(1.05);
 }

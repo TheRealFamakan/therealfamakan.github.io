@@ -55,6 +55,7 @@ function getCVModal() {
             </div>
             <iframe class="cv-modal-preview" title="CV preview"></iframe>
             <div class="cv-modal-footer">
+                <a class="cv-modal-open" target="_blank" rel="noopener">Open in new tab</a>
                 <a class="cv-modal-download" download>Download</a>
             </div>
         </div>
@@ -76,6 +77,7 @@ function updateCVModal(language) {
     activeCVLanguage = language in cvFiles ? language : 'fr';
     const modal = document.querySelector('.cv-modal');
     modal.querySelector('.cv-modal-preview').src = file.path;
+    modal.querySelector('.cv-modal-open').href = file.path;
     modal.querySelector('.cv-modal-download').href = file.path;
     modal.querySelector('.cv-modal-download').download = file.filename;
     modal.querySelectorAll('[data-language]').forEach((button) => {
