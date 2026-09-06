@@ -151,28 +151,21 @@
     background: #CE1126;
 }
 
-.theme-mode-switcher {
-    display: flex;
-    gap: 2px;
-    padding: 2px;
-    border: 1px solid var(--bg-black-50);
-    border-radius: 12px;
-}
-
-.theme-mode-button {
-    padding: 3px 6px;
-    color: var(--text-black-700);
-    border: 0;
-    border-radius: 9px;
-    background: transparent;
+.header .day-night {
     cursor: pointer;
-    font: 600 10px 'Poppins', sans-serif;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--text-black-900);
+    transition: transform 0.3s ease;
 }
 
-.theme-mode-button.active,
-.theme-mode-button:hover {
-    color: #fff;
-    background: var(--skin-color);
+.header .day-night:hover {
+    transform: rotate(15deg) scale(1.1);
+    color: var(--skin-color);
 }
 
 /* Social Icons in Header */
