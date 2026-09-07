@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What makes a data pipeline reliable? - Famakan Camara</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/skins/color-1.css">
+</head>
+<body>
+    <header class="header"><div class="container"><div class="row justify-content-between align-items-center"><div class="logo"><a href="../index.html"><span>F</span>amakan</a></div><nav class="nav-menu"><ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../index.html#portfolio">Portfolio</a></li><li><a href="../index.html#contact">Contact</a></li></ul></nav></div></div></header>
+    <main class="article-page"><article class="article-shell"><header class="article-header"><p class="blog-kicker">Data & AI</p><h1>What makes a data pipeline reliable?</h1><p class="article-meta">Published September 7, 2026 · 7 min read</p></header><div class="article-content"><p>A pipeline is not reliable because it runs once. It is reliable when its results remain understandable, testable, and recoverable as the data changes.</p><h2>Start with explicit contracts</h2><p>Every stage should make its expectations visible: required columns, accepted ranges, time zones, and how missing values are handled. A contract turns a silent data problem into a useful failure.</p><h2>Observe the journey</h2><p>Logs are only the beginning. Useful observability connects input volume, validation failures, processing time, and output freshness. When a dashboard looks wrong, the team should be able to find the responsible stage quickly.</p><h2>Design for recovery</h2><p>Retries, checkpoints, and idempotent transformations make recovery a normal operation rather than an emergency. The goal is not to pretend failures will not happen; it is to make them inexpensive to understand and repair.</p><p><strong>Related tools:</strong> Python, PostgreSQL, SQL, ETL, data validation.</p></div><a class="article-back" href="../blog.html">Back to the blog</a></article></main>
+</body>
+</html>

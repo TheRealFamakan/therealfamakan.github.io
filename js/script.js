@@ -18,6 +18,7 @@ const nav = document.querySelector(".nav"),
 navList.forEach(li => {
     const a = li.querySelector("a");
     a.addEventListener("click", function (e) {
+        if (!this.getAttribute("href").startsWith("#")) return;
         e.preventDefault();
         const targetId = this.getAttribute("href").substring(1);
         const targetSection = document.getElementById(targetId);

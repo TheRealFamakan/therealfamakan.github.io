@@ -5,6 +5,7 @@ const portfolioTranslations = {
         'nav.about': 'About',
         'nav.certifications': 'Certifications',
         'nav.services': 'Services',
+        'nav.blog': 'Blog',
         'nav.contact': 'Contact',
         'nav.viewCv': 'View CV',
         'theme.light': 'Light',
@@ -43,6 +44,20 @@ const portfolioTranslations = {
         'form.subject': 'Subject',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. All rights reserved.'
+        ,'blog.kicker': 'Notes, ideas, and experiments'
+        ,'blog.title': 'Thinking beyond the code.'
+        ,'blog.intro': 'Technical articles, mathematical intuition, and philosophical questions from a Data and AI engineer.'
+        ,'blog.all': 'All'
+        ,'blog.ai': 'Data & AI'
+        ,'blog.math': 'Mathematics'
+        ,'blog.philosophy': 'Philosophy'
+        ,'blog.read': 'Read article'
+        ,'blog.article1.title': 'What makes a data pipeline reliable?'
+        ,'blog.article1.summary': 'A practical look at validation, observability, and the small design decisions that make data systems trustworthy.'
+        ,'blog.article2.title': 'Why optimization is more than finding the minimum'
+        ,'blog.article2.summary': 'A visual intuition for constraints, trade-offs, and why a good solution depends on the question we ask.'
+        ,'blog.article3.title': 'Does an intelligent system understand?'
+        ,'blog.article3.summary': 'A reflection on language models, meaning, and the difference between producing an answer and having an experience.'
     },
     fr: {
         'nav.home': 'Accueil',
@@ -50,6 +65,7 @@ const portfolioTranslations = {
         'nav.about': 'À propos',
         'nav.certifications': 'Certifications',
         'nav.services': 'Services',
+        'nav.blog': 'Blog',
         'nav.contact': 'Contact',
         'nav.viewCv': 'Voir le CV',
         'theme.light': 'Clair',
@@ -88,6 +104,20 @@ const portfolioTranslations = {
         'form.subject': 'Objet',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. Tous droits réservés.'
+        ,'blog.kicker': 'Notes, idées et expériences'
+        ,'blog.title': 'Réfléchir au-delà du code.'
+        ,'blog.intro': 'Articles techniques, intuition mathématique et questions philosophiques d’un ingénieur Data et IA.'
+        ,'blog.all': 'Tous'
+        ,'blog.ai': 'Data et IA'
+        ,'blog.math': 'Mathématiques'
+        ,'blog.philosophy': 'Philosophie'
+        ,'blog.read': 'Lire l’article'
+        ,'blog.article1.title': 'Qu’est-ce qui rend un pipeline fiable ?'
+        ,'blog.article1.summary': 'Un regard pratique sur la validation, l’observabilité et les décisions qui rendent les systèmes de données fiables.'
+        ,'blog.article2.title': 'Pourquoi l’optimisation ne consiste pas seulement à trouver le minimum'
+        ,'blog.article2.summary': 'Une intuition sur les contraintes, les compromis et l’importance de la question posée.'
+        ,'blog.article3.title': 'Un système intelligent comprend-il vraiment ?'
+        ,'blog.article3.summary': 'Une réflexion sur les modèles de langage, le sens et la différence entre produire une réponse et vivre une expérience.'
     }
 };
 
