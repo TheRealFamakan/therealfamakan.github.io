@@ -11,7 +11,7 @@ const portfolioTranslations = {
         'theme.light': 'Light',
         'theme.dark': 'Dark',
         'theme.system': 'System',
-        'home.greeting': 'Hey, I’m',
+        'home.greeting': "Hey, I'm",
         'home.profession': 'Final-year Data & AI Engineering student at ENSA Khouribga.',
         'home.intro': 'I build data pipelines, ML models, and optimization systems.',
         'home.blogIntro': 'Seeking a PFE internship from February 2027.',
