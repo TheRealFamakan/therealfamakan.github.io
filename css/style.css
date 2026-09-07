@@ -361,7 +361,7 @@ h3.hello span {
 .home-img::after {
     border-top: none;
     border-left: none;
-    right: 20px;
+    right: -20px;
     bottom: -40px;
 }
 
