@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical notes and reflections by Famakan Camara.">
+    <title>Blog - Famakan Camara</title>
+    <link rel="icon" href="../images/img.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/language-switcher.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/skins/color-1.css" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="../css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="../css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="../css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="../css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="logo"><a href="../index.html"><span>F</span>amakan</a></div>
+                <div class="nav-toggler"><span></span></div>
+                <nav class="nav-menu">
+                    <ul class="nav">
+                        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="./" class="active" data-i18n="nav.blog">Blog</a></li>
+                        <li><a href="../index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                        <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                    <div class="social-icons-header">
+                        <a href="https://github.com/TheRealFamakan" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/famakan-camara" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-controls">
+        <div class="language-switcher" role="group" aria-label="Language">
+            <button type="button" class="language-button active" data-language="en" aria-pressed="true">EN</button>
+            <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+        </div>
+        <div class="theme-mode-switcher" role="group" aria-label="Theme mode">
+            <button type="button" class="theme-mode-button" data-theme-mode="light" data-i18n="theme.light">Light</button>
+            <button type="button" class="theme-mode-button" data-theme-mode="dark" data-i18n="theme.dark">Dark</button>
+            <button type="button" class="theme-mode-button" data-theme-mode="system" data-i18n="theme.system">System</button>
+        </div>
+    </div>
+
+    <main class="blog-page">
+        <div class="blog-shell">
+            <div class="blog-filters" role="group" aria-label="Article categories">
+                <button class="blog-filter active" type="button" data-filter="all" data-i18n="blog.all">All</button>
+                <button class="blog-filter" type="button" data-filter="ai" data-i18n="blog.ai">Data & AI</button>
+                <button class="blog-filter" type="button" data-filter="math" data-i18n="blog.math">Mathematics</button>
+                <button class="blog-filter" type="button" data-filter="philosophy" data-i18n="blog.philosophy">Philosophy</button>
+            </div>
+
+            <section class="blog-grid" aria-label="Articles">
+                <article class="blog-card" data-category="ai">
+                    <div class="blog-card-category" data-i18n="blog.ai">Data & AI</div>
+                    <h2 data-i18n="blog.article4.title">De l’AIS au dollar économisé</h2>
+                    <p data-i18n="blog.article4.summary">Retour d’expérience sur MaritimeFlow: pipeline AIS, modèle ETA, optimisation de flotte et simulation des pénalités de démurrage.</p>
+                    <div class="blog-meta"><span>7 septembre 2026</span><span>8 min de lecture</span></div>
+                    <a class="blog-read-link" href="../articles/maritimeflow-optimisation-flotte.html" data-i18n="blog.read">Read article</a>
+                </article>
+
+                <article class="blog-card" data-category="ai">
+                    <div class="blog-card-category" data-i18n="blog.ai">Data & AI</div>
+                    <h2 data-i18n="blog.article1.title">What makes a data pipeline reliable?</h2>
+                    <p data-i18n="blog.article1.summary">A practical look at validation, observability, and the small design decisions that make data systems trustworthy.</p>
+                    <div class="blog-meta"><span>August 13, 2026</span><span>7 min read</span></div>
+                    <a class="blog-read-link" href="../articles/reliable-data-pipeline.html" data-i18n="blog.read">Read article</a>
+                </article>
+
+                <article class="blog-card" data-category="math">
+                    <div class="blog-card-category" data-i18n="blog.math">Mathematics</div>
+                    <h2 data-i18n="blog.article2.title">Why optimization is more than finding the minimum</h2>
+                    <p data-i18n="blog.article2.summary">A visual intuition for constraints, trade-offs, and why a good solution depends on the question we ask.</p>
+                    <div class="blog-meta"><span>August 27, 2026</span><span>5 min read</span></div>
+                    <a class="blog-read-link" href="../articles/optimization-and-questions.html" data-i18n="blog.read">Read article</a>
+                </article>
+
+                <article class="blog-card" data-category="philosophy">
+                    <div class="blog-card-category" data-i18n="blog.philosophy">Philosophy</div>
+                    <h2 data-i18n="blog.article3.title">Does an intelligent system understand?</h2>
+                    <p data-i18n="blog.article3.summary">A reflection on language models, meaning, and the difference between producing an answer and having an experience.</p>
+                    <div class="blog-meta"><span>September 1, 2026</span><span>6 min read</span></div>
+                    <a class="blog-read-link" href="../articles/does-ai-understand.html" data-i18n="blog.read">Read article</a>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/style-switcher.js"></script>
+    <script src="../js/language-switcher.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>
