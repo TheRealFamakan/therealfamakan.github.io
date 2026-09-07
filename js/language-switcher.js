@@ -44,6 +44,9 @@ const portfolioTranslations = {
         'form.subject': 'Subject',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. All rights reserved.'
+        ,'blog.title': 'Hey, I’m Famakan'
+        ,'blog.intro': 'I’m a Data & AI Engineering student at ENSA Khouribga, in my final year. I spend most of my time building things: data pipelines, ML models, optimization systems, and then writing about how they actually work.'
+        ,'blog.about': 'This blog is where I document the rabbit holes: data engineering, MILP and optimization, NLP, RAG systems, and whatever I’m currently building or debugging. I’m searching for a PFE internship starting February 2027.'
         ,'blog.all': 'All'
         ,'blog.ai': 'Data & AI'
         ,'blog.math': 'Mathematics'
@@ -103,6 +106,9 @@ const portfolioTranslations = {
         'form.subject': 'Objet',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. Tous droits réservés.'
+        ,'blog.title': 'Bonjour, moi c’est Famakan'
+        ,'blog.intro': 'Je suis étudiant en dernière année de Data Engineering & IA à l’ENSA Khouribga. Je passe la plupart de mon temps à construire des pipelines de données, des modèles de ML et des systèmes d’optimisation, puis à expliquer concrètement leur fonctionnement.'
+        ,'blog.about': 'Ce blog me sert à documenter mes recherches et mes problèmes techniques : data engineering, MILP et optimisation, NLP, systèmes RAG, ainsi que ce que je construis ou débogue actuellement. Je recherche un stage PFE à partir de février 2027.'
         ,'blog.all': 'Tous'
         ,'blog.ai': 'Data et IA'
         ,'blog.math': 'Mathématiques'
