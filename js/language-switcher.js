@@ -11,9 +11,10 @@ const portfolioTranslations = {
         'theme.light': 'Light',
         'theme.dark': 'Dark',
         'theme.system': 'System',
-        'home.hello': 'Hello, my name is',
-        'home.professionPrefix': "I'm a",
-        'home.intro': 'Building intelligent systems, scalable data pipelines, and optimization models. Specialized in Machine Learning, Operations Research (MILP, metaheuristics), and RAG architectures.',
+        'home.greeting': 'Hey, I’m',
+        'home.profession': 'I’m a Data & AI Engineering student at ENSA Khouribga, in my final year.',
+        'home.intro': 'I spend most of my time building things: data pipelines, ML models, optimization systems, and then writing about how they actually work.',
+        'home.blogIntro': 'This blog is where I document the technical problems I work through: data engineering, MILP and optimization, NLP, RAG systems, and whatever I’m currently building or debugging. I’m searching for a PFE internship starting February 2027.',
         'sections.portfolio': 'Portfolio',
         'sections.about': 'About Me',
         'sections.certifications': 'Certifications',
@@ -44,9 +45,6 @@ const portfolioTranslations = {
         'form.subject': 'Subject',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. All rights reserved.'
-        ,'blog.title': 'Hey, I’m Famakan'
-        ,'blog.intro': 'I’m a Data & AI Engineering student at ENSA Khouribga, in my final year. I spend most of my time building things: data pipelines, ML models, optimization systems, and then writing about how they actually work.'
-        ,'blog.about': 'This blog is where I document the rabbit holes: data engineering, MILP and optimization, NLP, RAG systems, and whatever I’m currently building or debugging. I’m searching for a PFE internship starting February 2027.'
         ,'blog.all': 'All'
         ,'blog.ai': 'Data & AI'
         ,'blog.math': 'Mathematics'
@@ -73,9 +71,10 @@ const portfolioTranslations = {
         'theme.light': 'Clair',
         'theme.dark': 'Sombre',
         'theme.system': 'Système',
-        'home.hello': "Bonjour, je m'appelle",
-        'home.professionPrefix': 'Je suis',
-        'home.intro': "Je conçois des systèmes intelligents, des pipelines de données évolutifs et des modèles d'optimisation. Spécialisé en Machine Learning, recherche opérationnelle (MILP, métaheuristiques) et architectures RAG.",
+        'home.greeting': 'Bonjour, moi c’est',
+        'home.profession': 'Je suis étudiant en dernière année de Data Engineering & IA à l’ENSA Khouribga.',
+        'home.intro': 'Je passe la plupart de mon temps à construire des pipelines de données, des modèles de ML et des systèmes d’optimisation, puis à expliquer concrètement leur fonctionnement.',
+        'home.blogIntro': 'Ce blog documente les problèmes techniques que je traite : data engineering, MILP et optimisation, NLP, systèmes RAG, ainsi que ce que je construis ou débogue actuellement. Je recherche un stage PFE à partir de février 2027.',
         'sections.portfolio': 'Projets',
         'sections.about': 'À propos',
         'sections.certifications': 'Certifications',
@@ -106,9 +105,6 @@ const portfolioTranslations = {
         'form.subject': 'Objet',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. Tous droits réservés.'
-        ,'blog.title': 'Bonjour, moi c’est Famakan'
-        ,'blog.intro': 'Je suis étudiant en dernière année de Data Engineering & IA à l’ENSA Khouribga. Je passe la plupart de mon temps à construire des pipelines de données, des modèles de ML et des systèmes d’optimisation, puis à expliquer concrètement leur fonctionnement.'
-        ,'blog.about': 'Ce blog me sert à documenter mes recherches et mes problèmes techniques : data engineering, MILP et optimisation, NLP, systèmes RAG, ainsi que ce que je construis ou débogue actuellement. Je recherche un stage PFE à partir de février 2027.'
         ,'blog.all': 'Tous'
         ,'blog.ai': 'Data et IA'
         ,'blog.math': 'Mathématiques'
