@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retour d'expérience sur l'optimisation d'une flotte maritime avec MaritimeFlow.">
+    <title>De l'AIS au dollar économisé - Famakan Camara</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/skins/color-1.css">
+</head>
+<body>
+    <header class="header"><div class="container"><div class="row justify-content-between align-items-center"><div class="logo"><a href="../index.html"><span>F</span>amakan</a></div><nav class="nav-menu"><ul class="nav"><li><a href="../index.html">Accueil</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../index.html#portfolio">Projets</a></li><li><a href="../index.html#contact">Contact</a></li></ul></nav></div></div></header>
+    <main class="article-page">
+        <article class="article-shell">
+            <header class="article-header">
+                <p class="blog-kicker">Data & IA</p>
+                <h1>De l'AIS au dollar économisé : retour d'expérience sur l'optimisation d'une flotte maritime</h1>
+                <p class="article-meta">Publié le 7 septembre 2026 · 8 min de lecture</p>
+            </header>
+            <div class="article-content">
+                <p>MaritimeFlow est un projet réalisé dans le cadre de mon PFA chez OCP Group, entre août et septembre 2026. L'objectif était de relier quatre niveaux de décision: transformer des positions AIS brutes en trajets exploitables, estimer les heures d'arrivée, optimiser l'allocation et le routage d'une flotte, puis mesurer l'effet de la politique obtenue par simulation.</p>
+
+                <h2>Le problème business: le retard coûte plus qu'une ETA imprécise</h2>
+                <p>Pour l'export de phosphate par voie maritime, la performance ne se résume pas à la distance parcourue. Un navire retardé peut générer des frais de démurrage, notamment lorsque le temps prévu pour les opérations portuaires est dépassé. Une prédiction d'ETA est donc utile pour anticiper un retard, mais elle ne décide pas quel navire affecter à quelle commande ni comment arbitrer plusieurs demandes concurrentes.</p>
+                <p>La question opérationnelle devient: quelle politique de flotte réduit le coût total des retards tout en respectant les capacités, les disponibilités et les contraintes de routage?</p>
+
+                <h2>Du signal AIS à une matrice de trajets</h2>
+                <p>Le pipeline commence avec des positions GPS AIS. Le volume brut représentait environ 19 à 40 millions de positions par mois. Le nettoyage a supprimé les points incohérents, les doublons et les séquences inutilisables avant la segmentation des trajectoires. Cette étape a permis d'obtenir environ 27 000 trajets candidats.</p>
+                <p>Les ports n'étaient pas supposés connus à partir des seules coordonnées. Un clustering DBSCAN a identifié environ 500 clusters de ports candidats, ensuite confrontés au World Port Index. Les trajets ont alors été convertis en couples origine-destination. Après validation, la matrice OD retenait 15 671 trajets valides et 1 472 relations inter-ports.</p>
+                <p>Cette représentation est importante: le modèle d'optimisation ne travaille pas sur des millions de points GPS, mais sur des unités de transport, des temps et des relations entre ports.</p>
+
+                <h2>Modèle ETA: utile, mais pas suffisant</h2>
+                <p>Pour estimer les temps d'arrivée, j'ai entraîné un modèle LightGBM. Après filtrage des valeurs aberrantes, l'entraînement portait sur 1 130 trajets. Sur l'ensemble de test, le modèle obtenait une MAE de 34,5 heures et un R² de 0,72.</p>
+                <p>Ces métriques donnent une information exploitable sur l'incertitude des arrivées, mais elles ne constituent pas une politique de décision. Même une bonne ETA ne choisit pas seule une affectation optimale. Elle devient une donnée d'entrée du modèle de flotte.</p>
+
+                <h2>MILP et ALNS pour l'allocation et le routage</h2>
+                <p>Le problème d'allocation et de routage a été formulé comme un programme linéaire en nombres entiers mixtes (MILP). La formulation encode les décisions d'affectation, les séquences de trajets et les contraintes opérationnelles. Pour explorer plus rapidement des solutions sur un espace combinatoire, elle a été complétée par une métaheuristique ALNS (Adaptive Large Neighborhood Search).</p>
+                <p>ALNS alterne des opérations de destruction et de réparation: une partie d'une solution est retirée, puis reconstruite selon plusieurs stratégies. Cette approche permet de chercher des politiques compétitives sans exiger que chaque instance soit résolue exactement.</p>
+
+                <h2>Validation par simulation</h2>
+                <p>La comparaison finale a été réalisée avec une simulation à événements discrets sous SimPy sur 200 jours. Deux politiques ont été comparées: la politique optimisée par ALNS et une politique naïve FCFS (First Come, First Served).</p>
+                <p>La politique ALNS livrait légèrement moins de commandes, mais elle réduisait suffisamment les retards coûteux pour générer environ 400 000 dollars d'économies en pénalités de démurrage sur la période simulée. Ce résultat rappelle qu'un indicateur unique, comme le nombre de commandes livrées, peut conduire à une conclusion erronée si le coût des retards n'est pas intégré.</p>
+
+                <h2>Ce qui est transférable à un cas réel</h2>
+                <p>Les données utilisées pour ce projet sont synthétiques et fictives. Elles ne sont pas des données de production réelles d'OCP et les économies simulées ne constituent pas une estimation financière opérationnelle. En revanche, la méthodologie est directement transférable à un cas réel: pipeline data, contrôle qualité, modèle ML, formulation d'optimisation et simulation de politiques.</p>
+                <p>La leçon d'ingénierie est simple: le modèle ETA n'est qu'un composant. La valeur vient de la chaîne complète, de la qualité des données jusqu'à la mesure du coût d'une décision dans un environnement simulé.</p>
+            </div>
+            <a class="article-back" href="../blog.html">Retour au blog</a>
+        </article>
+    </main>
+</body>
+</html>

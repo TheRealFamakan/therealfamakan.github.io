@@ -45,8 +45,8 @@ const portfolioTranslations = {
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. All rights reserved.'
         ,'blog.kicker': 'Notes, ideas, and experiments'
-        ,'blog.title': 'Thinking beyond the code.'
-        ,'blog.intro': 'Technical articles, mathematical intuition, and philosophical questions from a Data and AI engineer.'
+        ,'blog.title': 'Field notes from a Data & AI student'
+        ,'blog.intro': 'I am a third-year Data Engineering & AI student at ENSA Khouribga. I document what I build, including the MaritimeFlow pipeline, ML, and optimization work carried out at OCP.'
         ,'blog.all': 'All'
         ,'blog.ai': 'Data & AI'
         ,'blog.math': 'Mathematics'
@@ -58,6 +58,8 @@ const portfolioTranslations = {
         ,'blog.article2.summary': 'A visual intuition for constraints, trade-offs, and why a good solution depends on the question we ask.'
         ,'blog.article3.title': 'Does an intelligent system understand?'
         ,'blog.article3.summary': 'A reflection on language models, meaning, and the difference between producing an answer and having an experience.'
+        ,'blog.article4.title': 'From AIS data to a dollar saved'
+        ,'blog.article4.summary': 'A field report on MaritimeFlow: AIS pipeline, ETA model, fleet optimization, and demurrage penalty simulation.'
     },
     fr: {
         'nav.home': 'Accueil',
@@ -105,8 +107,8 @@ const portfolioTranslations = {
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. Tous droits réservés.'
         ,'blog.kicker': 'Notes, idées et expériences'
-        ,'blog.title': 'Réfléchir au-delà du code.'
-        ,'blog.intro': 'Articles techniques, intuition mathématique et questions philosophiques d’un ingénieur Data et IA.'
+        ,'blog.title': 'Notes de terrain d’un étudiant Data & IA'
+        ,'blog.intro': 'Je suis étudiant en 3e année de Data Engineering & IA à l’ENSA Khouribga. Je documente ce que je construis, dont le pipeline MaritimeFlow et les travaux de ML et d’optimisation menés chez OCP.'
         ,'blog.all': 'Tous'
         ,'blog.ai': 'Data et IA'
         ,'blog.math': 'Mathématiques'
@@ -118,6 +120,8 @@ const portfolioTranslations = {
         ,'blog.article2.summary': 'Une intuition sur les contraintes, les compromis et l’importance de la question posée.'
         ,'blog.article3.title': 'Un système intelligent comprend-il vraiment ?'
         ,'blog.article3.summary': 'Une réflexion sur les modèles de langage, le sens et la différence entre produire une réponse et vivre une expérience.'
+        ,'blog.article4.title': 'De l’AIS au dollar économisé'
+        ,'blog.article4.summary': 'Retour d’expérience sur MaritimeFlow : pipeline AIS, modèle ETA, optimisation de flotte et simulation des pénalités de démurrage.'
     }
 };
 
