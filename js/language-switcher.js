@@ -44,9 +44,6 @@ const portfolioTranslations = {
         'form.subject': 'Subject',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. All rights reserved.'
-        ,'blog.kicker': 'Notes, ideas, and experiments'
-        ,'blog.title': 'Field notes from a Data & AI student'
-        ,'blog.intro': 'I am a third-year Data Engineering & AI student at ENSA Khouribga. I document what I build, including the MaritimeFlow pipeline, ML, and optimization work carried out at OCP.'
         ,'blog.all': 'All'
         ,'blog.ai': 'Data & AI'
         ,'blog.math': 'Mathematics'
@@ -106,9 +103,6 @@ const portfolioTranslations = {
         'form.subject': 'Objet',
         'form.message': 'Message',
         'footer.rights': '©2026 Famakan Camara. Tous droits réservés.'
-        ,'blog.kicker': 'Notes, idées et expériences'
-        ,'blog.title': 'Notes de terrain d’un étudiant Data & IA'
-        ,'blog.intro': 'Je suis étudiant en 3e année de Data Engineering & IA à l’ENSA Khouribga. Je documente ce que je construis, dont le pipeline MaritimeFlow et les travaux de ML et d’optimisation menés chez OCP.'
         ,'blog.all': 'Tous'
         ,'blog.ai': 'Data et IA'
         ,'blog.math': 'Mathématiques'
