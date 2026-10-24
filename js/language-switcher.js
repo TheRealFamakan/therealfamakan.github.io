@@ -60,6 +60,8 @@ const portfolioTranslations = {
         ,'blog.article3.summary': 'A reflection on language models, meaning, and the difference between producing an answer and having an experience.'
         ,'blog.article4.title': 'From AIS data to a dollar saved'
         ,'blog.article4.summary': 'A field report on MaritimeFlow: AIS pipeline, ETA model, fleet optimization, and demurrage penalty simulation.'
+        ,'blog.article5.title': 'My first RAG evaluation score was wrong: what I corrected'
+        ,'blog.article5.summary': 'A technical postmortem of the first evaluation of FinSolve AI, from keyword matching to semantic similarity with aligned retrieval settings.'
     },
     fr: {
         'nav.home': 'Accueil',
@@ -122,6 +124,8 @@ const portfolioTranslations = {
         ,'blog.article3.summary': 'Une réflexion sur les modèles de langage, le sens et la différence entre produire une réponse et vivre une expérience.'
         ,'blog.article4.title': 'De l’AIS au dollar économisé'
         ,'blog.article4.summary': 'Retour d’expérience sur MaritimeFlow : pipeline AIS, modèle ETA, optimisation de flotte et simulation des pénalités de démurrage.'
+        ,'blog.article5.title': 'Mon premier score d’évaluation RAG était faux : ce que j’ai corrigé'
+        ,'blog.article5.summary': 'Retour d’expérience technique sur la première évaluation de FinSolve AI, du comptage de mots-clés à la similarité sémantique avec des paramètres de retrieval alignés.'
     }
 };
 

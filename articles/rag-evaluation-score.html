@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first RAG evaluation score was wrong: what I corrected - Famakan Camara</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/skins/color-1.css">
+</head>
+<body>
+    <header class="header"><div class="container"><div class="row justify-content-between align-items-center"><div class="logo"><a href="../index.html"><span>F</span>amakan</a></div><nav class="nav-menu"><ul class="nav"><li><a href="../index.html">Home</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../index.html#portfolio">Portfolio</a></li><li><a href="../index.html#contact">Contact</a></li></ul></nav></div></div></header>
+    <main class="article-page"><article class="article-shell"><header class="article-header"><p class="blog-kicker">Data & AI</p><h1>My first RAG evaluation score was wrong: what I corrected</h1><p class="article-meta">Published October 24, 2026 · 5 min read</p></header><div class="article-content">
+        <p><a href="https://github.com/TheRealFamakan/RBAC">FinSolve AI</a> is an enterprise RAG platform with role-based access control. It has 6 role levels, and metadata filtering at the vector store level ensures that each user only reaches authorized documents.</p>
+        <p>My first evaluation compared keywords. That choice produced faithfulness 0.26, answer relevancy 0.38, context precision 0.43, and a global score of 35.8%. The problem became clear with a simple example: if a question contained “revenue” and the answer used “sales turnover”, the score fell to 0 even though the meaning was identical.</p>
+        <p>That result made me inspect the evaluation itself before drawing conclusions about FinSolve AI. A keyword comparison measures whether the same terms appear, not whether the answer expresses the same information. In a RAG system, that distinction matters because a useful answer can use different wording from the question or the reference answer.</p>
+        <h2>The retrieval setting was also wrong</h2>
+        <p>The evaluation script used top_k=3, while the application uses top_k=5. The script was therefore not testing the same retrieval configuration as the application. Some information needed to answer a question, such as Q3 quarterly figures, was not retrieved. I aligned the evaluation with the application and changed it to top_k=5.</p>
+        <p>This was a separate issue from the scoring method. Even a better similarity measure cannot evaluate a context that the script never retrieved. I wanted the evaluation to follow the same retrieval path as the application, so the comparison would include the context available to the actual answer generation step.</p>
+        <h2>Keeping the evaluation language consistent</h2>
+        <p>The documents are in English. I therefore forced the model to answer in English as well. Without that constraint, a cross-lingual similarity loss could affect the comparison even when the answer was relevant to the retrieved documents and the ground truth.</p>
+        <p>This change keeps the language of the documents, the answer, and the reference aligned. It does not change the information requested; it avoids adding a language difference to a measurement that is supposed to focus on relevance and context.</p>
+        <h2>Using semantic similarity</h2>
+        <p>The main correction was to replace keyword matching with semantic evaluation based on cosine similarity. I used all-MiniLM-L6-v2 to compare the answer with the ground truth and the retrieved contexts. On 10 test questions covering 5 roles, the new scores were faithfulness 0.777, answer relevancy 0.930, and context precision 0.838, with a global score of 84.8%.</p>
+        <p>The purpose of this change was not to make the score look better. It was to make the comparison closer to the meaning of the texts. I also kept the evaluation scope explicit: the result comes from 10 test questions covering 5 roles, not from an assumption that every possible question or role has been measured.</p>
+        <p><strong>Related project:</strong> <a href="../index.html#portfolio">FinSolve AI — Enterprise RAG Platform with RBAC</a>. The source code is available on <a href="https://github.com/TheRealFamakan/RBAC">GitHub</a>.</p>
+        <h2>Limits of this result</h2>
+        <p>The change in score comes from the evaluation method, not from an improvement of the model. This is an embedding-based evaluation, not an LLM-as-a-judge evaluation like RAGAS. The same embedding model is used for retrieval and evaluation, which favors the scores. Finally, 10 questions are a small sample, so the result should not be treated as a complete measurement of the system.</p>
+        <p>I take away one practical lesson: a metric only has value when I know exactly what it measures. Before comparing scores, I need to check the evaluation method, retrieval settings, language, and sample used to produce them.</p>
+    </div><a class="article-back" href="../blog.html">Back to the blog</a></article></main>
+</body>
+<script src="../js/article-language.js"></script>
+</html>
