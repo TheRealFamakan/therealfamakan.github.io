@@ -871,7 +871,20 @@ h3.hello span {
     border-color: var(--skin-color);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
 }
+/* Technologies des projets du portfolio */
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
 
+.tech-tag {
+    display: inline-block;
+    white-space: nowrap;
+    flex: 0 0 auto;
+}
 /* Responsive */
 @media (max-width: 767px) {
     .skill-boxes {
